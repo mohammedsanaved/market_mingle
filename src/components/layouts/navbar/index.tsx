@@ -11,6 +11,7 @@ import image from '../../../constants/images/image';
 import { defaultTheme } from '../../../constants/theme/theme';
 import PrimaryButton from '../../inputs/PrimaryButton';
 import { FaPhone } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 type ImageProps = {
   url?: string;
@@ -109,9 +110,9 @@ export const Navbar2 = (props: Navbar2Props) => {
               navLink.subMenuLinks && navLink.subMenuLinks.length > 0 ? (
                 <SubMenu key={index} navLink={navLink} isMobile={isMobile} />
               ) : (
-                <a
+                <Link
                   key={index}
-                  href={navLink.url}
+                  to={navLink.url}
                   style={{
                     fontFamily: defaultTheme.fonts.poppins.join(','),
                     fontWeight: currentPath === navLink.url ? 500 : 400,
@@ -126,7 +127,7 @@ export const Navbar2 = (props: Navbar2Props) => {
                   className='block py-3 text-[1rem] first:pt-7 lg:px-4 lg:py-2  first:lg:pt-2'
                 >
                   {navLink.title}
-                </a>
+                </Link>
               )
             )}
             <a
