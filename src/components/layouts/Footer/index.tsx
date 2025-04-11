@@ -9,6 +9,7 @@ import {
 } from 'react-icons/bi';
 import image from '../../../constants/images/image';
 import { defaultTheme } from '../../../constants/theme/theme';
+import { Link } from 'react-router-dom';
 
 type ImageProps = {
   url?: string;
@@ -72,7 +73,7 @@ export const Footer = (props: Footer4Props) => {
                   key={linkIndex}
                   className='font-medium text-[1rem]'
                 >
-                  <a href={link.url}>{link.title}</a>
+                  <Link to={link.url}>{link.title}</Link>
                 </li>
               ))}
             </ul>
@@ -118,10 +119,10 @@ export const Footer4Defaults: Props = {
   columnLinks: [
     {
       links: [
-        { title: 'Home', url: '#' },
-        { title: 'Services', url: '#' },
-        { title: 'About', url: '#' },
-        { title: 'Contact', url: '#' },
+        { title: 'Home', url: '/' },
+        { title: 'Services', url: '/services' },
+        { title: 'About', url: '/about' },
+        { title: 'Contact', url: '/contact' },
         { title: 'Go to Top ↑', url: '#' },
       ],
     },
