@@ -16,7 +16,7 @@ export const aboutUsData = {
   descriptionPara02:
     'Our team of experts is dedicated to helping you achieve your business goals by providing you with the tools and resources you need to succeed.',
   image: {
-    src: `${image.teamAbout}`,
+    src: `${image.ceo}`,
     alt: 'About MarketMingle',
   },
 };

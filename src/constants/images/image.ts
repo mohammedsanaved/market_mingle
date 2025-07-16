@@ -40,6 +40,7 @@ import Approach2 from '../../assets/images/Header/2. Strategy.png';
 import Approach3 from '../../assets/images/Header/3. Implementation.png';
 import Approach4 from '../../assets/images/Header/4. Monitoring.png';
 import Approach5 from '../../assets/images/Header/5. Reporting.png';
+import ceo from '../../assets/images/About/ceo-about.jpeg';
 
 const image: Record<string, string> = {
   dbImageOne,
@@ -82,5 +83,6 @@ const image: Record<string, string> = {
   Approach3,
   Approach4,
   Approach5,
+  ceo,
 };
 export default image;

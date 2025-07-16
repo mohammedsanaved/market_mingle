@@ -1,7 +1,7 @@
 /** @format */
 
-import image from "../../../constants/images/image";
-import { defaultTheme } from "../../../constants/theme/theme";
+import image from '../../../constants/images/image';
+import { defaultTheme } from '../../../constants/theme/theme';
 // import image from "../../../constants/images/image"
 
 type LinkProps = {
@@ -20,7 +20,7 @@ type Props = {
   contacts: Contact[];
 };
 
-export type Contact22Props = React.ComponentPropsWithoutRef<"section"> &
+export type Contact22Props = React.ComponentPropsWithoutRef<'section'> &
   Partial<Props>;
 
 export const Contact22 = (props: Contact22Props) => {
@@ -39,7 +39,7 @@ export const Contact22 = (props: Contact22Props) => {
           {contacts.map((contact, index) => (
             <div
               key={index}
-              style={{ fontFamily: defaultTheme.fonts.poppins.join(",") }}
+              style={{ fontFamily: defaultTheme.fonts.poppins.join(',') }}
             >
               <img className='mb-5 sm:mb-6' src={contact.icon} />
               <h3
@@ -70,41 +70,42 @@ export const Contact22Defaults: Props = {
     {
       // icon: <BiEnvelope className='size-12' />,
       icon: `${image.sms}`,
-      title: "Email",
+      title: 'Email',
       description:
-        "Connect with us via email for inquiries and collaborations.",
+        'Connect with us via email for inquiries and collaborations.',
       link: {
-        label: "hello@relume.io",
-        url: "#",
+        label: 'hello@relume.io',
+        url: '#',
       },
     },
     {
       icon: `${image.phone}`,
-      title: "Phone",
-      description: "Call us to discuss your business needs and requirements.",
+      title: 'Phone',
+      description: 'Call us to discuss your business needs and requirements.',
       link: {
-        label: "+91 999-999-9999",
-        url: "#",
+        label: '+91 999-999-9999',
+        url: '#',
       },
     },
     {
       icon: `${image.location}`,
-      title: "Office",
+      title: 'Office',
       description:
-        "Visit our office to meet our team, located at the following address.",
+        'Visit our office to meet our team, located at the following address.',
       link: {
-        label: "123 Sample St, Sydney NSW 2000 AU",
-        url: "#",
+        label:
+          'Address :C-2, POORNIMA PARK, 472/D, SALISBURY PARK,NEAR DHOLE PATIL SCHOOL,VTC: pune,PO: Market Yard,District: Pune',
+        url: '#',
       },
     },
     {
       icon: `${image.clock}`,
-      title: "Business Hours",
+      title: 'Business Hours',
       description:
-        "We are available to assist you, visit us between these hours.",
+        'We are available to assist you, visit us between these hours.',
       link: {
-        label: "Monday-Friday, 9:00 AM - 5:00 PM",
-        url: "#",
+        label: 'Monday-Friday, 9:00 AM - 5:00 PM',
+        url: '#',
       },
     },
   ],
